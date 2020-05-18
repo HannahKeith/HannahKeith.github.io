@@ -19,18 +19,27 @@
       let response = JSON.parse(request.responseText);
         // console.log(response);
         //This part I figured out using jquery documentation on creating an img element
-      let pic1 = response.hdurl;
-        // console.log(pic1);
-        $seePOD = $('<img>')
-         .appendTo('.ball')
-         .attr({
+
+        if (response.media_type === 'video') {
+          let movie = response.url;
+            $seeMov1 = $('<video>')
+              .appendTo('.ball')
+              .attr({
+                  'src': movie,
+                  'id': 'mov'
+                })
+        } else {
+          let pic1 = response.hdurl;
+          // console.log(pic1);
+          $seePOD = $('<img>')
+            .appendTo('.ball')
+            .attr({
                    'src': pic1,
-                   "id": 'portal'
+                   "id": 'portal',
 
                })
                // console.log($seePOD);
-        }
-        else {
+        } } else {
              console.log("Error in network request: " + request.statusText);
         }});
 
