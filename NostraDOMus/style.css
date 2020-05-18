@@ -1,0 +1,137 @@
+/* <style>
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+</style> */
+
+
+.head{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  height: 700px;
+
+  /* width: auto; */
+  background-image: url("nostradamus_header.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  }
+
+
+
+h2 {
+  color: #ca2c92;
+  font-size: 100px;
+  padding-left: 20%;
+  word-wrap: break-word;
+  text-shadow: 4px 4px 20px #ff77ff,4px 4px 12px black;
+  /* font-family: 'Atomic Age'; */
+}
+
+h3{
+  color: #ca2c92;
+  font-size: 50px;
+  padding-left: 35%;
+  word-wrap: break-word;
+  text-shadow: 4px 4px 12px #ff77ff,4px 4px 12px black;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background-color: black;
+}
+
+.btnDiv {
+  display: flex;
+  margin-bottom: 3%;
+  justify-content: center;
+}
+
+.ball {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#portal {
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+
+  }
+
+.button {
+  background: pink;
+  padding: 1em 2em;
+  color: black;
+  border-radius: 25px;
+  font-size: 16px;
+  height: 50px;
+  width: 300px;
+  box-shadow: 4px 4px 12px #ff77ff,4px 4px 12px white;
+}
+
+#quoteBtn {
+  max-width: 50%;
+  align-content: center;
+  margin-top: 30px;
+
+}
+
+.button:hover{
+  background: grey;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  overflow: auto;
+}
+
+.modal-text {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  margin: 130px auto;
+  padding: 20% auto;
+  border-radius: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: pink;
+}
+
+
+
+.closeBtn {
+  color:black;
+  /* float: right; */
+  font-size: 60px;
+  /* padding-right: 30px; */
+}
+
+.closeBtn:hover {
+  color: white;
+  cursor: pointer;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 300px;
+}
