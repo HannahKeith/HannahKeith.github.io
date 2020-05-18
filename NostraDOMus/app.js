@@ -102,6 +102,7 @@ const generatePrediction = () => {
       $oracle.empty();
       $oracle.appendTo($('.modal-text'))
       $oracle.text(`Nostra-DOM-us says: ${predictions[randomNumGenerator()]}   ${predictions[randomNumGenerator()]}   ${predictions[randomNumGenerator()]}`)
+      $oracle.addClass('message')
 
 
 
