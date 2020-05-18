@@ -5,7 +5,7 @@
 
 
 
-  let link = 'https://api.nasa.gov/planetary/apod'
+  let link = 'https://cors-anywhere.herokuapp.com/https://api.nasa.gov/planetary/apod'
   let apiKey = 'u30450EZhSB5gNYDejP5YVoukIFOMmSExXtvCNbC'
 
   let request = new XMLHttpRequest();
@@ -22,7 +22,7 @@
 
         if (response.media_type === 'video') {
           let movie = response.url;
-            $seeMov1 = $('<video>')
+            $seeMov1 = $('<iframe>')
               .appendTo('.ball')
               .attr({
                   'src': movie,
@@ -94,16 +94,18 @@ const randomNumGenerator = () => {
     return Math.floor(Math.random() * predictions.length)
   };
 
+  let $oracle = $('<div>')
+
 const generatePrediction = () => {
       $('.modal').css('display','block')
-      $('.modal-text').text('');
-      let $oracle = $('<div>')
-      .text(`Nostra-DOM-us says: ${predictions[randomNumGenerator()]}   ${predictions[randomNumGenerator()]}   ${predictions[randomNumGenerator()]}`)
-      .appendTo($('.modal-text'))
+
+      $oracle.empty();
+      $oracle.appendTo($('.modal-text'))
+      $oracle.text(`Nostra-DOM-us says: ${predictions[randomNumGenerator()]}   ${predictions[randomNumGenerator()]}   ${predictions[randomNumGenerator()]}`)
+
+
 
 };
-
-
 
 modalBtn.on('click', generatePrediction)
 

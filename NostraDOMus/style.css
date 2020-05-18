@@ -58,12 +58,13 @@ h3{
   background-color: black;
 }
 
-#portal {
+#portal, #mov {
   border-radius: 50%;
   max-width: 100%;
   max-height: 100%;
-
   }
+
+
 
 .button {
   background: pink;
@@ -103,8 +104,9 @@ h3{
 .modal-text {
   background-color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
   height: 400px;
   width: 400px;
   margin: 130px auto;
@@ -119,9 +121,12 @@ h3{
 
 .closeBtn {
   color:black;
-  /* float: right; */
+  float: right;
   font-size: 60px;
-  /* padding-right: 30px; */
+  padding-bottom: 50px;
+  padding-left: 150px;
+  padding-top: 50px;
+  
 }
 
 .closeBtn:hover {
