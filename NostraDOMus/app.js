@@ -79,7 +79,7 @@ $(() => {
 
 
   let predictions = [
-    'the young lion will overcome the older one, ', 'two wounds made one , then he dies a cruel death, ', 'on the field of combat in a single battle, ', 'the ancient lady will fall from her high place, ', 'burnt through lightening of twenty threes the six, ', 'chants and demands, ', 'these will in the future by headless idiots, ', 'be received as divine prayers, ', 'this is when the moon completes her great cycle, ', 'his fame will increase towards the realm of the east, '
+    'the young lion will overcome the older one, ', 'two wounds made one , then he dies a cruel death, ', 'on the field of combat in a single battle, ', 'the ancient lady will fall from her high place, ', 'burnt through lightening of twenty threes the six, ', 'chants and demands, ', 'these will in the future by headless idiots, ', 'be received as divine prayers, ', 'this is when the moon completes her great cycle, ', 'his fame will increase towards the realm of the east, ', 'He who by his tongue will seduce a great troop;', 'Beasts ferocious with hunger will cross the rivers,', 'There will be scourges the like of which was never seen, ', 'Crying to the great immortal God for relief, ', 'Famine within plague, people put out by steel,', 'According to the prediction, another falls at night time, ', 'An evil deed foretold by the bearer of a petition, ', 'Then Arethusa will redden a new river, ', 'Two great rocks will war for a long time,', 'Earthshaking fire from the center of the Earth, '
   ];
 
 let modal = $('#simpleModal');
